@@ -17,3 +17,8 @@ Alur Komunikasi:
 4. Pesan dari satu klien diteruskan ke semua klien lain oleh server
 
 Nomor port haruslah sama agar koneksi dapat terhubung pada port tersebut.
+
+## 2.3
+![Code after modification](./static/image/Modified%20Code.png)
+
+Yang perlu diubah hanyalah format print di server untuk memasukkan IP dan port client.

@@ -20,8 +20,8 @@ async fn handle_connection(
                 match incoming {
                 Some(Ok(msg)) => {
                         if let Some(text) = msg.as_text() {
-                            println!("From client {addr:?} {text:?}");
-                            bcast_tx.send(text.into())?;
+                            println!("From client {}: {}", addr, text);
+                            bcast_tx.send(format!("{}: {}", addr, text))?;
                         }
                     }
                     Some(Err(err)) => return Err(err.into()),
